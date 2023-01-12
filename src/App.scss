@@ -1,0 +1,26 @@
+.App{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.input{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.select{
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  align-items: center ;
+}

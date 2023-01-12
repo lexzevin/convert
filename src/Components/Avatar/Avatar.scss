@@ -1,0 +1,50 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F1F1F1;
+  max-width: 14rem;
+  height: 13rem;
+  position: relative;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.25rem;
+    height: 5.25rem;
+    background: white;
+    border-radius: 50%;
+    //padding: 1.5rem;
+    position: relative;
+    //border-bottom: 3px solid black;
+    //border-left: 3px solid black;
+    //border-right: none;
+  }
+
+  &__border {
+    padding: 0.313rem;
+    border-bottom: 0.188rem solid black;
+    border-left: 0.188rem solid black;
+    border-radius: 50%;
+  }
+
+  &__add {
+    right: 60px;
+    top: 55px;
+    position: absolute;
+    /* left: 9.688rem; */
+    /* bottom: -10.063rem; */
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0.063rem solid #fff;
+    border-radius: 50%;
+  }
+
+  &__name {
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+  }
+}

@@ -1,0 +1,42 @@
+.my-button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color:white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+
+  &.error {
+    background: #A52800;
+  }
+
+  &.disabled {
+    background: #EDEDED;
+    display: initial;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background: #363636;
+
+  }
+
+  &.inactive {
+    background: #363636;
+
+  }
+
+  &.s {
+    font-size: 0.75rem;
+  }
+
+  &.m {
+    font-size:0.875rem;
+  }
+
+  &.l {
+    font-size: 1rem;
+  }
+}
+

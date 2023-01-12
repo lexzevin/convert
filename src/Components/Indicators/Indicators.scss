@@ -1,0 +1,122 @@
+.slider{
+  &__index{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    align-content: center;
+    max-width: 14rem;
+    padding: 0.625rem;
+    border: 0.063rem solid #ECECEC;
+  }
+
+  &__first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(132, 165, 0, 0.1);
+    border-radius: 0.188rem;
+  }
+
+
+  &__second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(165, 40, 0, 0.1);
+    border-radius: 0.188rem;
+  }
+
+
+  &__currency{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 1rem;
+  }
+
+  &__country-inf{
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #363636;
+    margin: 0;
+  }
+
+  &__price-inf{
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #363636;
+    margin: 0;
+  }
+
+  &__interest{
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #84A500;
+    margin: 0;
+  }
+
+  &__second-interest{
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color:#A52800;
+    margin: 0;
+  }
+
+  &__height{
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #84A500;
+    margin: 0;
+  }
+
+  &__second-height{
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color:#A52800;
+    margin: 0;
+  }
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    padding-top: 1.25rem;
+  }
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 0.063rem solid #ECECEC;
+
+  }
+
+  &__header{
+    display: flex;
+    gap: 6.938rem;
+    padding-bottom: 2.75rem;
+  }
+
+  &__country{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #363636;
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #363636;
+  }
+}

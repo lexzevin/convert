@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Indicators.scss";
 
 type SlidersProps = {

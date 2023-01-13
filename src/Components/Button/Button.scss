@@ -1,11 +1,13 @@
+@import "src/mixins";
+
 .my-button {
   display: flex;
   align-items: center;
-  padding: 0.75rem 1.5rem;
-  color:white;
+  padding: rem(12) rem(24);
+  color: white;
   border: none;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: rem(12);
 
   &.error {
     background: #A52800;
@@ -19,24 +21,22 @@
 
   &.active {
     background: #363636;
-
   }
 
   &.inactive {
     background: #363636;
-
   }
 
   &.s {
-    font-size: 0.75rem;
+    font-size: rem(12);
   }
 
   &.m {
-    font-size:0.875rem;
+    font-size: rem(14);
   }
 
   &.l {
-    font-size: 1rem;
+    font-size: rem(16);
   }
 }
 

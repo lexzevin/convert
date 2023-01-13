@@ -1,4 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
+
 import "./Button.scss";
 
 type ButtonType = {

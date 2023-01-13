@@ -1,9 +1,11 @@
 import React from "react";
 import { AutoComplete, Input } from "antd";
+
 import Glass from "../../assets/svg/Glass";
-import "./AutoComplete.scss";
 import ArrowTop from "../../assets/svg/ArrowTop";
 import ArrowBottom from "../../assets/svg/ArrowBottom";
+
+import "./AutoComplete.scss";
 
 export const AutoCompletes: React.FC = () => {
   const renderItem = (

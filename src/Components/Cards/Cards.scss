@@ -1,46 +1,47 @@
+@import "src/mixins";
+
 .slider{
   &__index{
     display: flex;
     font-family: 'Inter', sans-serif;
     align-items: center;
     align-content: center;
-    max-width: 14rem;
-    padding: 0.625rem;
-    border: 0.063rem solid #ECECEC;
+    max-width: rem(224);
+    padding: rem(10);
+    border: rem(1) solid #ECECEC;
   }
 
   &__block{
     display: flex;
     justify-content: space-between;
-    max-width: 50rem;
-    padding-top: 1.25rem;
+    max-width: rem(800);
+    padding-top: rem(20);
   }
 
   &__card{
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    border: 0.063rem solid #ECECEC;
-
+    padding: rem(24);
+    border: rem(1) solid #ECECEC;
   }
 
   &__header{
     display: flex;
-    gap: 6.938rem;
-    padding-bottom: 2.75rem;
+    gap: rem(111);
+    padding-bottom: rem(44);
   }
 
   &__country{
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: rem(16);
+    line-height: rem(24);
     color: #363636;
   }
 
   &__price{
     font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: rem(20);
+    line-height: rem(32);
     color: #363636;
   }
 }

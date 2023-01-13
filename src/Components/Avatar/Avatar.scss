@@ -1,50 +1,46 @@
+@import "src/mixins";
+
 .avatar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #F1F1F1;
-  max-width: 14rem;
-  height: 13rem;
+  max-width: rem(224);
+  height: rem(208);
   position: relative;
 
   &__main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5.25rem;
-    height: 5.25rem;
+    width: rem(84);
+    height: rem(84);
     background: white;
     border-radius: 50%;
-    //padding: 1.5rem;
     position: relative;
-    //border-bottom: 3px solid black;
-    //border-left: 3px solid black;
-    //border-right: none;
   }
 
   &__border {
-    padding: 0.313rem;
-    border-bottom: 0.188rem solid black;
-    border-left: 0.188rem solid black;
+    padding: rem(5);
+    border-bottom: rem(3) solid black;
+    border-left: rem(3) solid black;
     border-radius: 50%;
   }
 
   &__add {
-    right: 60px;
-    top: 55px;
+    right: rem(60);
+    top: rem(55);
     position: absolute;
-    /* left: 9.688rem; */
-    /* bottom: -10.063rem; */
-    height: 1.5rem;
-    width: 1.5rem;
-    border: 0.063rem solid #fff;
+    height: rem(24);
+    width: rem(25);
+    border: rem(1) solid #fff;
     border-radius: 50%;
   }
 
   &__name {
-    padding-top: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    padding-top: rem(24);
+    font-size: rem(16);
+    line-height: rem(24);
 
   }
 }

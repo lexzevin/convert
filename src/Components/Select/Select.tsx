@@ -1,16 +1,14 @@
 import React from "react";
 import { Select } from "antd";
-import "./Select.scss";
 
-const handleChange = (value: string) => {
-  console.log(`selected ${value}`);
-};
+import "./Select.scss";
 
 const { Option } = Select;
 
 type SelectsProps = {
   options: SelectOptions[];
   title: string;
+  onChange?: (e?: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 type SelectOptions = {
@@ -20,11 +18,15 @@ type SelectOptions = {
   title: string;
 };
 
-export const Selects: React.FC<SelectsProps> = ({ options, title }) => (
+export const Selects: React.FC<SelectsProps> = ({
+  options,
+  title,
+  onChange,
+}) => (
   <Select
     style={{ width: 332 }}
-    defaultValue={title}
-    onChange={handleChange}
+    placeholder={title}
+    onChange={onChange}
     optionLabelProp="label"
   >
     {options.map((opt) => (

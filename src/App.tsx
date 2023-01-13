@@ -1,57 +1,25 @@
 import React from "react";
 
-import "./App.scss";
+import { AutoCompletes } from "./Components/AutoComplete/AutoComplete";
 import { Button } from "./Components/Button/Button";
 import { Inputs } from "./Components/Inputs/Inputs";
 import { Selects } from "./Components/Select/Select";
-import Rus from "./assets/svg/Rus";
 import { Cards } from "./Components/Cards/Cards";
 import { Indicators } from "./Components/Indicators/Indicators";
+import { Avatar } from "./Components/Avatar/Avatar";
+import { selectMock } from "./Components/Select/SelectMocks";
+
+import Rus from "./assets/svg/Rus";
 import ArrowTop from "./assets/svg/ArrowTop";
 import Usd from "./assets/svg/Usd";
 import Cny from "./assets/svg/Cny";
 import ArrowBottom from "./assets/svg/ArrowBottom";
-import { Avatar } from "./Components/Avatar/Avatar";
 import PlusPhoto from "./assets/svg/PlusPhoto";
-import { AutoCompletes } from "./Components/AutoComplete/AutoComplete";
 import Person from "./assets/img/Person.png";
 import AddPhoto from "./assets/svg/AddPhoto";
 import DeletePhoto from "./assets/svg/DeletePhoto";
-import Eur from "./assets/svg/Eur";
-import Turkey from "./assets/svg/Turkey";
 
-const selectMock = [
-  {
-    id: 1,
-    title: "RUS",
-    country: <Rus />,
-    value: "RUS",
-  },
-  {
-    id: 2,
-    title: "EUR",
-    country: <Eur />,
-    value: "EUR",
-  },
-  {
-    id: 3,
-    title: "TRY",
-    country: <Turkey />,
-    value: "Turkey",
-  },
-  {
-    id: 4,
-    title: "CYN",
-    country: <Cny />,
-    value: "CYN",
-  },
-  {
-    id: 5,
-    title: "USD",
-    country: <Usd />,
-    value: "USD",
-  },
-];
+import "./App.scss";
 
 function App() {
   return (

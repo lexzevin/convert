@@ -1,0 +1,47 @@
+@import "src/mixins";
+
+.slider{
+  &__index{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    align-content: center;
+    max-width: rem(224);
+    padding: rem(10);
+    border: rem(1) solid #ECECEC;
+  }
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(800);
+    padding-top: rem(20);
+  }
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    padding: rem(24);
+    border: rem(1) solid #ECECEC;
+  }
+
+  &__header{
+    display: flex;
+    gap: rem(111);
+    padding-bottom: rem(44);
+  }
+
+  &__country{
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #363636;
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(32);
+    color: #363636;
+  }
+}

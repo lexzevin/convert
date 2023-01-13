@@ -1,0 +1,28 @@
+@import "src/mixins";
+
+.App {
+  display: flex;
+  gap: rem(16);
+  justify-content: center;
+  padding-top: rem(48);
+}
+
+.input {
+  display: flex;
+  gap: rem(16);
+  padding: rem(16);
+  justify-content: center;
+}
+
+.select {
+  display: flex;
+  margin: 0 auto;
+  width: rem(400);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding-top: rem(16);
+  align-items: center;
+}

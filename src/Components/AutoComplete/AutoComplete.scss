@@ -1,0 +1,95 @@
+@import "src/mixins";
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+.autoComplete{
+  background: white;
+
+  &__items{
+    display: flex;
+    gap: rem(10);
+
+  &__name{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(16);
+    color: #363636;
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: rem(11);
+    line-height: rem(16);
+    color: #363636
+  }
+
+  &__indicators{
+    display: flex;
+    align-items: center;
+  }
+
+  &__numbers{
+    display: flex;
+    align-items: center;
+    background: rgba(132, 165, 0, 0.1);
+    border-radius: rem(3);
+  }
+
+  &__numbers-second{
+    display: flex;
+    align-items: center;
+    background: rgba(165, 40, 0, 0.1);
+    border-radius: rem(3);
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #363636;
+  }
+
+  &__price-second{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #A52800;
+  }
+
+  &__percent{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #84A500;
+  }
+
+  &__percent-second{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #A52800;
+  }
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-search-input{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: rem(16);
+  color: #8C8C8C;
+  border: rem(1) solid #F3F3F3;
+  gap: rem(5);
+}
+
+.ant-select-selector{
+  background-color: white;
+}
+}

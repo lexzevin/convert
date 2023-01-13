@@ -1,0 +1,122 @@
+@import "src/mixins";
+
+.slider{
+  &__index{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    align-content: center;
+    max-width: rem(224);
+    padding: rem(10);
+    border: rem(1) solid #ECECEC;
+  }
+
+  &__first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32);
+    height: rem(32);
+    background: rgba(132, 165, 0, 0.1);
+    border-radius: rem(48);
+  }
+
+  &__second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32);
+    height: rem(32);
+    background: rgba(165, 40, 0, 0.1);
+    border-radius: rem(3);
+  }
+
+  &__currency{
+    display: flex;
+    flex-direction: column;
+    padding: 0 rem(32) 0 rem(16);
+  }
+
+  &__country-inf{
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #363636;
+    margin: 0;
+  }
+
+  &__price-inf{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #363636;
+    margin: 0;
+  }
+
+  &__interest{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #84A500;
+    margin: 0;
+  }
+
+  &__second-interest{
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: rem(16);
+    color:#A52800;
+    margin: 0;
+  }
+
+  &__height{
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(16);
+    color: #84A500;
+    margin: 0;
+  }
+
+  &__second-height{
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(16);
+    color:#A52800;
+    margin: 0;
+  }
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(800);
+    padding-top: rem(20);
+  }
+
+  &__card{
+    display: flex;
+    flex-direction: column;
+    padding: rem(24);
+    border: rem(1) solid #ECECEC;
+
+  }
+
+  &__header{
+    display: flex;
+    gap: rem(111);
+    padding-bottom: rem(44);
+  }
+
+  &__country{
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #363636;
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(32);
+    color: #363636;
+  }
+}

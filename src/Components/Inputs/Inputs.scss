@@ -23,7 +23,27 @@
 
   &.active {
     border: rem(1) solid #363636;
-    color: black;
+    color: #363636;
   }
+
+  &.s {
+    width: rem(160);
+  }
+
+  &.m {
+    width: rem(386);
+  }
+
+  &.l {}
+}
+
+.error {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(24);
+  color: #8b2020;
+  padding: rem(2);
 }
 

@@ -1,0 +1,13 @@
+@import "src/mixins";
+
+.checkBox{
+  padding: rem(1);
+  &:disabled{
+    border: 1px solid #A52800;
+  }
+
+  &:active{
+
+  }
+
+}

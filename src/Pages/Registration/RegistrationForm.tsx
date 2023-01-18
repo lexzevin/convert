@@ -29,7 +29,7 @@ const schema = Yup.object().shape({
   confirmPassword: Yup.string()
     .min(8, "Пароль должен состоять из 8 символов")
     .max(50, "Максимальное количество символов 50")
-    .oneOf([Yup.ref("password")], "Пароли не совподают")
+    .oneOf([Yup.ref("password")], "Пароли не совпадают")
     .required("Поле обязательно для заполнения"),
 });
 

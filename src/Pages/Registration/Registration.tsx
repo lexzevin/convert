@@ -1,6 +1,6 @@
 import React from "react";
-
 import { useNavigate } from "react-router-dom";
+
 import { RegistrationForm } from "./RegistrationForm";
 
 import Login from "../../assets/img/Login.png";

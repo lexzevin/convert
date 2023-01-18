@@ -15,7 +15,7 @@ interface MyFormValues {
 const schema = Yup.object().shape({
   name: Yup.string()
     .min(6, "Минимум 6 символов")
-    .max(50, "Too Long!")
+    .max(50, "максимальное количество симоволов 50")
     .required("Поле обязательно для заполнения")
     .matches(/^[a-zA-Z0-9]*$/, "Имя может содержать только буквы и цыфры"),
   email: Yup.string()
@@ -23,12 +23,12 @@ const schema = Yup.object().shape({
     .required("Поле обязательно для заполнения"),
   password: Yup.string()
     .min(8, "Пароль должен состоять из 8 символов")
-    .max(50, "Too Long!")
+    .max(50, "максимальное количество симоволов 50")
     .required("Поле обязательно для заполнения")
     .matches(/^[a-zA-Z0-9]*$/, "Пароль может содержать только буквы и цыфры"),
   confirmPassword: Yup.string()
     .min(8, "Пароль должен состоять из 8 символов")
-    .max(50, "Too Long!")
+    .max(50, "максимальное количество симоволов 50")
     .oneOf([Yup.ref("password")], "Пароли не совподают")
     .required("Поле обязательно для заполнения"),
 });
@@ -89,7 +89,7 @@ export const RegistrationForm = () => {
               />
             </div>
             <div className="right__menu__checkBox">
-              <CheckboxButton title="i accept the Terms of Service and have read Privacy Policy" />
+              <CheckboxButton title="I accept the Terms of Service and have read Privacy Policy" />
             </div>
             <div className="right__menu__last__button">
               <Button

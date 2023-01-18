@@ -1,7 +1,7 @@
 import React from "react";
+import { FieldProps } from "formik";
 
 import "./Inputs.scss";
-import { FieldProps } from "formik";
 
 type InputsType = {
   status: string;

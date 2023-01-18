@@ -5,7 +5,7 @@ import "./Button.scss";
 type ButtonType = {
   variant?: string;
   className?: string;
-  children?: string;
+  children: string;
   size?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 

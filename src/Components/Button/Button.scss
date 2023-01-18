@@ -3,36 +3,46 @@
 .my-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: rem(12) rem(24);
   color: white;
   border: none;
   cursor: pointer;
   font-size: rem(12);
 
+  &:disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDEDED;
+    cursor: not-allowed;
+    color: #EDEDED;
+  }
+
   &.error {
     background: #A52800;
   }
 
-  &.disabled {
-    background: #EDEDED;
-    display: initial;
-    cursor: not-allowed;
-  }
-
   &.active {
+    display: flex;
+    align-items: center;
     background: #363636;
   }
 
   &.inactive {
+    display: flex;
+    align-items: center;
     background: #363636;
   }
 
   &.s {
     font-size: rem(12);
+    width: rem(160);
   }
 
   &.m {
     font-size: rem(14);
+    width: rem(420);
   }
 
   &.l {

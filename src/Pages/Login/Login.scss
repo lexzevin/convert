@@ -1,0 +1,130 @@
+@import "src/mixins";
+
+.login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: 'TT Firs Neue', sans-serif;
+
+  .right__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: rem(116) rem(0) rem(152) rem(112);
+
+    &__text {
+      display: flex;
+      justify-content: flex-start;
+      width: rem(420);
+      font-weight: 500;
+      font-size: rem(36);
+      line-height: rem(48);
+      color: #363636;
+      padding-bottom: rem(56);
+    }
+
+    &__button {
+      display: flex;
+      gap: rem(22);
+      padding-bottom: rem(48);
+    }
+
+    &__first-button {
+      display: flex;
+      align-items: center;
+      gap: rem(7);
+      border: rem(1) solid #ECECEC;
+      background: #FFFFFF;
+      cursor: pointer;
+      padding: rem(16) rem(24);
+    }
+
+    &__second-button {
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+      border: rem(1) solid #ECECEC;
+      background: #FFFFFF;
+      cursor: pointer;
+      padding: rem(16) rem(24);
+
+    }
+
+    &__write {
+      display: flex;
+      align-items: center;
+      gap: rem(6);
+      padding-bottom: rem(42);
+    }
+
+    &__first-border {
+      width: rem(194);
+      height: rem(1);
+      background: #F3F3F3;
+    }
+
+    &__or {
+      font-weight: 400;
+      font-size: rem(12);
+      line-height: rem(12);
+      color: #646464;
+    }
+
+    &__first__input {
+      padding-bottom: rem(40);
+    }
+
+    &__checkBox {
+      padding-bottom: rem(48);
+    }
+
+    &__last__button {
+      padding-bottom: rem(32);
+    }
+
+    &__info {
+      display: flex;
+      justify-content: center;
+      max-width: rem(400);
+      align-items: center;
+      gap: rem(4);
+    }
+
+    &__acc {
+      color: #363636;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: rem(24);
+    }
+
+    &__create-acc {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: rem(24);
+      color: #84A500;
+    }
+  }
+
+  .left__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #272727;
+    padding: rem(32) 0 0 rem(32);
+
+    &__entry {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: rem(800);
+    }
+  }
+
+  .test {
+    opacity: 1;
+  }
+}

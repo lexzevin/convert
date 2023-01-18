@@ -3,6 +3,6 @@
 .checkBox{
   padding: rem(1);
   &:disabled{
-    border: 1px solid #A52800;
+    border: rem(1) solid #A52800;
   }
 }

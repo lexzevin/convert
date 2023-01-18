@@ -37,7 +37,7 @@ export const Registration = () => {
           <div className="right__menu__acc">У вас уже есть учетная запись?</div>
           <div
             className="right__menu__create-acc"
-            onClick={() => navigate("/registration")}
+            onClick={() => navigate("/login")}
           >
             Авторизоваться
           </div>

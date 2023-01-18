@@ -6,7 +6,7 @@ import { LoginForm } from "./LoginForm";
 import Entry from "../../assets/img/Entry.png";
 import Google from "../../assets/img/Google.png";
 import GitHub from "../../assets/img/GitHub.png";
-import LogoBlack from "../../assets/img/Logo.png";
+import LogoBlack from "../../assets/img/LogoBlack.png";
 
 import "./Login.scss";
 

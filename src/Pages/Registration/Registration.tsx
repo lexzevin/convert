@@ -6,7 +6,7 @@ import { RegistrationForm } from "./RegistrationForm";
 import Login from "../../assets/img/Login.png";
 import Google from "../../assets/img/Google.png";
 import GitHub from "../../assets/img/GitHub.png";
-import LogoBlack from "../../assets/img/Logo.png";
+import JusticeFinance from "../../assets/img/JusticeFinance.svg";
 
 import "./Registration.scss";
 
@@ -45,7 +45,7 @@ export const Registration = () => {
       </div>
       <div className="left__menu">
         <div className="left__menu__logo">
-          <img className="test" src={LogoBlack} alt="logo" />
+          <img className="test" src={JusticeFinance} alt="logo" />
         </div>
         <div className="left__menu__entry">
           <img className="img" src={Login} alt="logo" />

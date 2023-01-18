@@ -20,8 +20,8 @@
       justify-content: flex-start;
       width: rem(420);
       font-weight: 500;
-      font-size: 36px;
-      line-height: 48px;
+      font-size: rem(36);
+      line-height: rem(48);
       color: #363636;
       padding-bottom: rem(56);
     }
@@ -36,7 +36,7 @@
       display: flex;
       align-items: center;
       gap: rem(7);
-      border: 1px solid #ECECEC;
+      border: rem(1) solid #ECECEC;
       background: #FFFFFF;
       cursor: pointer;
       padding: rem(16) rem(24);
@@ -46,7 +46,7 @@
       display: flex;
       align-items: center;
       gap: rem(7);
-      border: 1px solid #ECECEC;
+      border: rem(1) solid #ECECEC;
       background: #FFFFFF;
       cursor: pointer;
       padding: rem(16) rem(24);
@@ -61,14 +61,14 @@
 
     &__first-border {
       width: rem(194);
-      height: 1px;
+      height: rem(1);
       background: #F3F3F3;
     }
 
     &__or {
       font-weight: 400;
-      font-size: 12px;
-      line-height: 12px;
+      font-size: rem(12);
+      line-height: rem(12);
       color: #646464;
     }
 
@@ -101,15 +101,15 @@
     &__acc {
       color: #363636;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: rem(14);
+      line-height: rem(24);
     }
 
     &__create-acc {
       cursor: pointer;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: rem(14);
+      line-height: rem(24);
       color: #84A500;
     }
   }

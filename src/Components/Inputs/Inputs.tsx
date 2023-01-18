@@ -21,7 +21,6 @@ export const Inputs: React.FC<InputsType> = ({
   form,
   ...props
 }) => {
-  console.log(field);
   return (
     <div>
       <input className={`my-input ${status} ${size}`} {...field} {...props} />

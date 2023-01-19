@@ -2,13 +2,14 @@ import React from "react";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 
+import { ReactComponent as ExchangeRates } from "../../assets/img/ExchangeRates.svg";
+import { ReactComponent as User } from "../../assets/img/User.svg";
+import { ReactComponent as TwoArrow } from "../../assets/img/TwoArrow.svg";
+import { ReactComponent as Out } from "../../assets/img/Out.svg";
+import { ReactComponent as Wallet } from "../../assets/img/Wallet.svg";
+import { ReactComponent as Transactions } from "../../assets/img/Transactions.svg";
+
 import Logo from "../../assets/img/Logo.png";
-import { ExchangeRates } from "../../assets/svg/ExchangeRates";
-import { User } from "../../assets/svg/User";
-import { TwoArrow } from "../../assets/svg/TwoArrow";
-import { Out } from "../../assets/svg/Out";
-import { Wallet } from "../../assets/svg/Wallet";
-import { Transactions } from "../../assets/svg/Transactions";
 
 import "./Dashboard.scss";
 
@@ -41,7 +42,7 @@ const items: DashboardItem[] = [
 
 export const Dashboard: React.FC = () => {
   return (
-    <div style={{ width: 240 }}>
+    <div>
       <div className="menu__logo">
         <img src={Logo} alt="logo" />
       </div>

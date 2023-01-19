@@ -4,7 +4,7 @@ import { Avatar } from "../Avatar/Avatar";
 import { Cards } from "../Cards/Cards";
 import { Wallet } from "../Wallet/Wallet";
 import { RecentTransactions } from "../RecentTransactions/RecentTransactions";
-import { TwoArrow } from "../../assets/svg/TwoArrow";
+import { ReactComponent as TwoArrow } from "../../assets/img/TwoArrow.svg";
 import { Dashboard } from "../Dashboard/Dashboard";
 import AddPhoto from "../../assets/svg/AddPhoto";
 import PlusPhoto from "../../assets/svg/PlusPhoto";
@@ -12,6 +12,7 @@ import Rus from "../../assets/svg/Rus";
 import Add from "../../assets/img/Add.png";
 
 import "./Wrapper.scss";
+
 type PropsWrapper = {
   title: string;
   children: React.ReactNode;
@@ -25,8 +26,8 @@ const itemCardModifier = [
 ];
 
 export const Wrapper: React.FC<PropsWrapper> = ({ title, children }) => {
-  const [wallet] = useState(false);
-  const [recentTransactions] = useState(false);
+  const [shoWallet] = useState(false);
+
   return (
     <div className="dashboard">
       <div>
@@ -46,7 +47,7 @@ export const Wrapper: React.FC<PropsWrapper> = ({ title, children }) => {
         </div>
         <div className="right__dashboard__text">Мой баланс</div>
         <Wallet>
-          {wallet ? (
+          {shoWallet ? (
             <div>
               <Cards price="120 000, 00 ₽" country="RUB" flag={<Rus />} />
             </div>
@@ -63,7 +64,7 @@ export const Wrapper: React.FC<PropsWrapper> = ({ title, children }) => {
           Последние транзацкции
         </div>
         <RecentTransactions>
-          {recentTransactions ? (
+          {shoWallet ? (
             <div>
               {itemCardModifier.map((color) => (
                 <div className="right__dashboard__item">

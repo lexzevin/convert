@@ -46,7 +46,6 @@ export const Dashboard: React.FC = () => {
       <div className="menu__logo">
         <img src={Logo} alt="logo" />
       </div>
-
       <div>
         <Menu className="menu" mode="inline" theme="light" items={items} />
       </div>

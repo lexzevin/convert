@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: center;
   background: #F1F1F1;
-  max-width: rem(224);
+  width: rem(224);
   height: rem(208);
   position: relative;
+  padding: 0;
 
   &__main {
     display: flex;

@@ -1,0 +1,42 @@
+@import "src/mixins";
+
+body {
+  overflow-y: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: rem(0) rem(24) rem(0) rem(24);
+  gap: rem(8);
+  height: 100vh;
+  width: rem(240);
+
+
+  &__logo {
+    padding : rem(32) rem(0) rem(102) rem(32);
+    border-right: rem(1) solid #F3F3F3;
+  }
+
+  .ant-menu-item {
+    gap: rem(8);
+    align-items: center;
+
+    div:first-child {
+      line-height: 0;
+    }
+  }
+
+  .ant-menu-title-content{
+    padding: rem(16) rem(0);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: rem(16);
+  }
+}
+
+.ant-menu {
+  li:last-child{
+    margin-top: rem(364);
+  }
+}

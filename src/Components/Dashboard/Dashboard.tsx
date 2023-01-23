@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { ReactComponent as User } from "../../assets/img/User.svg";
 import { ReactComponent as TwoArrow } from "../../assets/img/TwoArrow.svg";
@@ -41,29 +41,44 @@ const onClick: MenuProps["onClick"] = (e) => {
 const items: DashboardItem[] = [
   getItem(
     <Link to="/dashboard/currency">Курсы валют</Link>,
-    "Курсы валют",
-    <ExchangeRates />
+    "0",
+    <ExchangeRates className="iconEffect" />
   ),
   getItem(
     <Link to="/dashboard/profile">Мой профиль</Link>,
-    "Мой профиль",
-    <User />
+    "1",
+    <User className="iconEffect" />
   ),
   getItem(
     <Link to="/dashboard/convert">Обмен валют</Link>,
-    "Обмен валют",
-    <TwoArrow />
+    "2",
+    <TwoArrow className="iconEffect" />
   ),
-  getItem(<Link to="/dashboard/wallet">Кошельки</Link>, "Кошельки", <Wallet />),
+  getItem(
+    <Link to="/dashboard/wallet">Кошельки</Link>,
+    "3",
+    <Wallet className="iconEffect" />
+  ),
   getItem(
     <Link to="/dashboard/transactions">Транзакции</Link>,
-    "Транзакции",
-    <Transactions />
+    "4",
+    <Transactions className="iconEffect" />
   ),
-  getItem(<Link to="/">Выход</Link>, "Выход", <Out />),
+  getItem(<Link to="/">Выход</Link>, "5", <Out className="iconEffect" />),
 ];
 
 export const Dashboard: React.FC = () => {
+  const { pathname } = useLocation();
+  const [current, setCurrent] = useState("");
+
+  useLayoutEffect(() => {
+    if (pathname.includes("/dashboard/currency")) setCurrent("0");
+    else if (pathname.includes("/dashboard/profile")) setCurrent("1");
+    else if (pathname.includes("/dashboard/convert")) setCurrent("2");
+    else if (pathname.includes("/dashboard/wallet")) setCurrent("3");
+    else if (pathname.includes("/dashboard/transactions")) setCurrent("4");
+  }, [pathname]);
+
   return (
     <div>
       <div className="menu__logo">
@@ -76,6 +91,7 @@ export const Dashboard: React.FC = () => {
           theme="light"
           items={items}
           onClick={onClick}
+          selectedKeys={[current]}
         />
       </div>
     </div>

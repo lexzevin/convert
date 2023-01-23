@@ -5,6 +5,7 @@ import { Formik, Form, Field } from "formik";
 import { Inputs } from "../../Components/Inputs/Inputs";
 import { Button } from "../../Components/Button/Button";
 import CheckboxButton from "../../Components/Checkbox/Checkbox";
+import { useNavigate } from "react-router-dom";
 
 interface MyFormValues {
   name: string;
@@ -21,11 +22,14 @@ const schema = Yup.object().shape({
 });
 
 export const LoginForm = () => {
+  const navigate = useNavigate();
   const initialValues: MyFormValues = {
     name: "",
   };
+
   const onSubmitHandler = (values: MyFormValues) => {
-    console.log("submit", values);
+    localStorage.setItem("user", JSON.stringify(values));
+    navigate("/dashboard/currency");
   };
 
   return (

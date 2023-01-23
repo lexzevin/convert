@@ -1,0 +1,116 @@
+@import "src/mixins";
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+.exchangeRates{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center ;
+
+&__header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: rem(48);
+}
+
+  &__indicators{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: rem(40);
+    padding-bottom: rem(56);
+  }
+  &__title{
+    font-weight: 500;
+    font-size: rem(32);
+    line-height: rem(48);
+    color: #363636;
+  }
+
+  &__slider{
+    max-width: rem(1200);
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    border-bottom: rem(1) solid #F3F3F3;
+    padding-bottom: rem(24);
+  }
+
+  &__points{
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+  }
+
+  &____country{
+    font-weight: 500;
+    font-size: rem(11);
+    line-height: rem(16);
+    color: #363636;
+    padding-bottom: rem(8);
+  }
+
+  &__name{
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(24);
+    color: #363636;
+  }
+
+  &__indicator{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: rem(24);
+  }
+
+  &__first-indicator{
+    display: flex;
+    gap: rem(16);
+  }
+
+  &__first-statistics{
+    font-weight: 400;
+    font-size: rem(32);
+    line-height: rem(48);
+    color: #363636;
+  }
+
+  &__two-statistics{
+    display: flex;
+    gap: rem(8);
+    background: rgba(132, 165, 0, 0.1);
+    border-radius: rem(3);
+    align-items: center;
+    padding: rem(8);
+  }
+
+  &__third-statistics{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: rem(24);
+    color: #84A500;
+  }
+
+  &__four-statistics{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: rem(24);
+    color: #848484;
+  }
+
+}
+

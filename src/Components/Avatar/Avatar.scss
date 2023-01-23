@@ -9,13 +9,14 @@
   height: rem(208);
   position: relative;
   padding: 0;
+  align-items: center;
 
   &__main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: rem(84);
-    height: rem(84);
+    width: rem(96);
+    height: rem(96);
     background: white;
     border-radius: 50%;
     position: relative;
@@ -26,11 +27,13 @@
     border-bottom: rem(3) solid black;
     border-left: rem(3) solid black;
     border-radius: 50%;
+    width: rem(110);
+    height: rem(110);
   }
 
   &__add {
     right: rem(60);
-    top: rem(55);
+    top: rem(40);
     position: absolute;
     height: rem(24);
     width: rem(25);

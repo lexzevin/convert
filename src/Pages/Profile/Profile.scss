@@ -1,0 +1,66 @@
+@import "src/mixins";
+
+.profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: rem(32);
+  border-bottom: 1px solid #F3F3F3;
+
+  &__title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #363636;
+  }
+
+  &__info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #848484;
+    padding: rem(48) rem(0) rem(40) rem(0);
+  }
+
+  &__first-input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: rem(40);
+  }
+  &__two-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: rem(40);
+  }
+  &__third-input{
+    padding-bottom: rem(60);
+    border-bottom:1px solid #F3F3F3;
+  }
+
+  &__password{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #848484;
+    padding: rem(56) rem(0) rem(40) rem(0);
+  }
+
+  &__examination{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: rem(40);
+  }
+
+  &__active{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+}

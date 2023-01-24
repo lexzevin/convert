@@ -5,11 +5,6 @@ import { Formik, Form, Field } from "formik";
 import { Button } from "../../Components/Button/Button";
 import { Inputs } from "../../Components/Inputs/Inputs";
 
-interface MyFormValues {
-  name: string;
-  email: string;
-}
-
 const schema = Yup.object().shape({
   email: Yup.string()
     .email("Неверный адрес электронной почты")
@@ -24,22 +19,30 @@ const schema = Yup.object().shape({
     .required("Поле обязательно для заполнения"),
   data: Yup.string()
     .min(6, "Дата может содержать минимум 6 символов")
-    .matches(/^[0-9]*$/, "Дата может содержать только цыфры")
     .max(50, "Максимальное количество символов 50")
     .required("Поле обязательно для заполнения"),
   phone: Yup.string()
     .min(11, "Номер должен содержать минимум 11 символов")
-    .matches(/^[0-9]*$/, "Телефон может содержать только цыфры")
-    .max(50, "Максимальное количество символов 50")
     .required("Поле обязательно для заполнения"),
 });
 
-export const ProfileForm = () => {
+interface MyFormValues {
+  email: string;
+  name: string;
+  city: string;
+  data: string;
+  phone: string;
+}
+
+export const ProfileInfoForm = () => {
   const [user] = useState(JSON.parse(localStorage.getItem("user") || ""));
 
   const initialValues: MyFormValues = {
-    name: user?.name,
     email: user?.email,
+    name: "",
+    city: "",
+    data: "",
+    phone: "",
   };
 
   const onSubmitHandler = (values: MyFormValues) => {
@@ -60,7 +63,6 @@ export const ProfileForm = () => {
               <Button
                 children="Сохранить изменения"
                 size="l"
-                variant="active"
                 disabled={!isValid}
               />
             </div>
@@ -102,6 +104,7 @@ export const ProfileForm = () => {
                   className="active"
                   name="data"
                   placeholder="Дата рождения"
+                  type="date"
                 />
               </div>
               <div className="profile__third-input">
@@ -111,6 +114,7 @@ export const ProfileForm = () => {
                   status="active"
                   className="active"
                   name="phone"
+                  isMask={true}
                   placeholder="Номер телефона"
                 />
               </div>

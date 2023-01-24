@@ -8,7 +8,8 @@ import CheckboxButton from "../../Components/Checkbox/Checkbox";
 import { useNavigate } from "react-router-dom";
 
 interface MyFormValues {
-  name: string;
+  email: string;
+  password: string;
 }
 
 const schema = Yup.object().shape({
@@ -23,8 +24,10 @@ const schema = Yup.object().shape({
 
 export const LoginForm = () => {
   const navigate = useNavigate();
+
   const initialValues: MyFormValues = {
-    name: "",
+    email: "",
+    password: "",
   };
 
   const onSubmitHandler = (values: MyFormValues) => {

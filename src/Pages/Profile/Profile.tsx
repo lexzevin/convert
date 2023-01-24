@@ -1,13 +1,13 @@
 import React from "react";
 
-import { ProfileForm } from "./ProfileForm";
-import { ProfileFormTwo } from "./ProfileFormTwo";
+import { ProfileInfoForm } from "./ProfileInfoForm";
+import { ProfilePasswordForm } from "./ProfilePasswordForm";
 
 import "./Profile.scss";
 
 export const Profile = () => (
   <>
-    <ProfileForm />
-    <ProfileFormTwo />
+    <ProfileInfoForm />
+    <ProfilePasswordForm />
   </>
 );

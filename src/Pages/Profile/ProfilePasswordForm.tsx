@@ -6,7 +6,9 @@ import { Button } from "../../Components/Button/Button";
 import { Inputs } from "../../Components/Inputs/Inputs";
 
 interface MyFormValues {
-  name: string;
+  newPassword: string;
+  confirmPassword: string;
+  oldPassword: string;
 }
 
 const schema = Yup.object().shape({
@@ -25,9 +27,11 @@ const schema = Yup.object().shape({
     .required("Поле обязательно для заполнения"),
 });
 
-export const ProfileFormTwo = () => {
+export const ProfilePasswordForm = () => {
   const initialValues: MyFormValues = {
-    name: "",
+    newPassword: "",
+    confirmPassword: "",
+    oldPassword: "",
   };
 
   const onSubmitHandler = (values: MyFormValues) => {
@@ -74,7 +78,7 @@ export const ProfileFormTwo = () => {
               <Button
                 children="Изменить пароль"
                 size="l"
-                variant="active"
+                variant="disabled"
                 disabled={!isValid}
               />
             </div>

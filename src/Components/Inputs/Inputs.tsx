@@ -32,7 +32,6 @@ export const Inputs: React.FC<InputsType> = ({
             {...props}
             className={`my-input ${status} ${size}`}
             {...field}
-            {...props}
             mask="+7 999 999 99 99"
             maskChar=""
           />

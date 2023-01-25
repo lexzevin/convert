@@ -17,16 +17,11 @@ const schema = Yup.object().shape({
     .max(50, "Максимальное количество символов 50")
     .matches(/^[a-zA-Z]*$/, "Город может содержать только буквы")
     .required("Поле обязательно для заполнения"),
-  data: Yup.string()
-    .min(6, "Дата может содержать минимум 6 символов")
-    .max(50, "Максимальное количество символов 50")
-    .required("Поле обязательно для заполнения"),
-  phone: Yup.string()
-    .min(11, "Номер должен содержать минимум 11 символов")
-    .required("Поле обязательно для заполнения"),
+  data: Yup.string().required("Поле обязательно для заполнения"),
+  phone: Yup.string().required("Поле обязательно для заполнения"),
 });
 
-interface MyFormValues {
+interface ProfileInfoFormValues {
   email: string;
   name: string;
   city: string;
@@ -37,7 +32,7 @@ interface MyFormValues {
 export const ProfileInfoForm = () => {
   const [user] = useState(JSON.parse(localStorage.getItem("user") || ""));
 
-  const initialValues: MyFormValues = {
+  const initialValues: ProfileInfoFormValues = {
     email: user?.email,
     name: "",
     city: "",
@@ -45,7 +40,7 @@ export const ProfileInfoForm = () => {
     phone: "",
   };
 
-  const onSubmitHandler = (values: MyFormValues) => {
+  const onSubmitHandler = (values: ProfileInfoFormValues) => {
     localStorage.setItem("userInfo", JSON.stringify(values));
   };
 

@@ -5,7 +5,7 @@ import { Formik, Form, Field } from "formik";
 import { Button } from "../../Components/Button/Button";
 import { Inputs } from "../../Components/Inputs/Inputs";
 
-interface MyFormValues {
+interface ProfilePasswordFormValues {
   newPassword: string;
   confirmPassword: string;
   oldPassword: string;
@@ -15,11 +15,11 @@ const schema = Yup.object().shape({
   newPassword: Yup.string()
     .min(8, "Пароль должен содержать минимум 8 символов")
     .max(50, "Максимальное количество символов 50")
-    .oneOf([Yup.ref("confirmPassword")], "Пароли не совпадают")
     .required("Поле обязательно для заполнения"),
   confirmPassword: Yup.string()
     .min(8, "Пароль должен содержать минимум 8 символов")
     .max(50, "Максимальное количество символов 50")
+    .oneOf([Yup.ref("newPassword")], "Пароли не совпадают")
     .required("Поле обязательно для заполнения"),
   oldPassword: Yup.string()
     .min(8, "Пароль должен содержать минимум 8 символов")
@@ -28,13 +28,13 @@ const schema = Yup.object().shape({
 });
 
 export const ProfilePasswordForm = () => {
-  const initialValues: MyFormValues = {
+  const initialValues: ProfilePasswordFormValues = {
     newPassword: "",
     confirmPassword: "",
     oldPassword: "",
   };
 
-  const onSubmitHandler = (values: MyFormValues) => {
+  const onSubmitHandler = (values: ProfilePasswordFormValues) => {
     localStorage.setItem("userPassword", JSON.stringify(values));
   };
 

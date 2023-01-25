@@ -24,7 +24,8 @@ export const Selects: React.FC<SelectsProps> = ({
   onChange,
 }) => (
   <Select
-    style={{ width: 332 }}
+    className="select"
+    style={{ width: 420 }}
     placeholder={title}
     onChange={onChange}
     optionLabelProp="label"

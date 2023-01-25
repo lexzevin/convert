@@ -14,7 +14,7 @@ body {
 
 
   &__logo {
-    padding : rem(32) rem(0) rem(102) rem(32);
+    padding: rem(32) rem(0) rem(102) rem(32);
     border-right: rem(1) solid #F3F3F3;
   }
 
@@ -27,7 +27,7 @@ body {
     }
   }
 
-  .ant-menu-title-content{
+  .ant-menu-title-content {
     padding: rem(16) rem(0);
     font-weight: 500;
     font-size: rem(14);
@@ -36,8 +36,8 @@ body {
 }
 
 .ant-menu {
-  li:last-child{
-    margin-top: rem(364);
+  li:last-child {
+    margin-top: rem(450);
   }
 }
 
